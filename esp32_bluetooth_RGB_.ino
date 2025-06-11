@@ -38,6 +38,7 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 #define ENCODER_PIN_B 33
 #define ENCODER_BUTTON 25
 #define BUZZER_PIN 26
+#define charge_on_of 27
 #define BATTERY_ADC_PIN 35
 #define LOW_VOLTAGE_THRESHOLD 11.0 // Batarya tipinize göre güncelleyin
 #define CHARGE_ADC_PIN 34
@@ -115,8 +116,9 @@ void rgbToHsv(int r, int g, int b, int &h, float &s, float &v); // Yeni fonksiyo
 int getFillBarsFromVoltage(float voltage) {
   // Bu fonksiyonu kendi batarya voltaj aralıklarınıza göre doldurmanız gerekmektedir.
   // Örnek olarak NiMH için bir skala sunulmuştur:
+  if (voltage >= 18) digitalWrite(27, LOW);
   if (voltage >= 17.6) return 10; // Tam dolu (max 10 bar)
-  else if (voltage >= 17.2) return 9;
+  else if (voltage >= 17.2) return 9; digitalWrite(27, HIGH);
   else if (voltage >= 17.0) return 8;
   else if (voltage >= 16.5) return 7;
   else if (voltage >= 15.0) return 6;
@@ -455,7 +457,7 @@ display.display();
   pinMode(ENCODER_PIN_A, INPUT_PULLUP);
   pinMode(ENCODER_PIN_B, INPUT_PULLUP);
   pinMode(ENCODER_BUTTON, INPUT_PULLUP);
-  pinMode(27, OUTPUT); // Şarj kontrol pini
+  pinMode(charge_on_of, OUTPUT); // Şarj kontrol pini
   digitalWrite(27, HIGH); // Başlangıçta şarjı kapalı tut (veya devrenize göre ayarla)
   pinMode(BUZZER_PIN, OUTPUT);
 

@@ -53,7 +53,7 @@ ID	Name	Designator	Footprint	Quantity	Manufacturer Part	Manufacturer	Supplier	Su
 
 ## 🖥️ Kod
 Ana kod dosyasını `esp32_bluetooth_RGB_.ino` olarak yükleyebilirsin.  
-Ek fonksiyonlar `led_animasyon.h` dosyasındadır.
+
 
 ---
 

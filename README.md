@@ -69,14 +69,14 @@ Ana kod dosyasını `esp32_bluetooth_RGB_.ino` olarak yükleyebilirsin.
 
 ## 🔌 Devre Şeması
 - topprint.pdf
-top.pdf
-back.pdf
-Gerber_rgbcubuk2_PCB_rgbcubuk2_2025-06-11.zip
-boardback.jpg
-boardfront.jpg
-BOM_rgbcubuk2_2025-06-11.csv
-PickAndPlace_PCB_rgbcubuk2_2025-06-11.csv
----
+- top.pdf
+- back.pdf
+- Gerber_rgbcubuk2_PCB_rgbcubuk2_2025-06-11.zip
+- boardback.jpg
+- boardfront.jpg
+- BOM_rgbcubuk2_2025-06-11.csv
+- PickAndPlace_PCB_rgbcubuk2_2025-06-11.csv
+
 
 ## 📄 Lisans
 MIT Lisansı altında paylaşılmıştır. Dilediğiniz gibi kullanabilirsiniz.
@@ -85,5 +85,5 @@ MIT Lisansı altında paylaşılmıştır. Dilediğiniz gibi kullanabilirsiniz.
 
 ## ☕ Destek Ol
 Eğer projeyi beğendiysen, YouTube kanalıma abone olmayı unutma!  
-[👉 TinkTime YouTube Kanalı](https://youtube.com/@tinktime)
+[👉 TinkTime YouTube Kanalı](https://www.youtube.com/@cemyasamaka)
 

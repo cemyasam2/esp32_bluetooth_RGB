@@ -58,15 +58,14 @@ Ek fonksiyonlar `led_animasyon.h` dosyasındadır.
 ---
 
 ## 🖨️ 3D Dosyalar
--[📦 STL dosyasını indir](3d-kapak.stl)
--difizor.stl
--difizorbitis baslangic.stl
--halka ek.stl
--led tutucu.stl
--rgb dikey lamba atma.stl
--rotary tutucua.stl
--taban kapak lamba.stl
--taban.stl
+-[📦 STL dosyasını indir](difizor.stl)
+-[📦 STL dosyasını indir](difizorbitis baslangic.stl)
+-[📦 STL dosyasını indir](halka ek.stl)
+-[📦 STL dosyasını indir](led tutucu.stl)
+-[📦 STL dosyasını indir](rgb dikey lamba atma.stl)
+-[📦 STL dosyasını indir](rotary tutucua.stl)
+-[📦 STL dosyasını indir](taban kapak lamba.stl)
+-[📦 STL dosyasını indir](taban.stl)
 
 ## 🔌 Devre Şeması
 - topprint.pdf

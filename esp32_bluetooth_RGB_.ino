@@ -116,17 +116,17 @@ void rgbToHsv(int r, int g, int b, int &h, float &s, float &v); // Yeni fonksiyo
 int getFillBarsFromVoltage(float voltage) {
   // Bu fonksiyonu kendi batarya voltaj aralıklarınıza göre doldurmanız gerekmektedir.
   // Örnek olarak NiMH için bir skala sunulmuştur:
-  if (voltage >= 18) digitalWrite(27, LOW);
+  if (voltage >= 18) digitalWrite(charge_on_of, LOW);
   if (voltage >= 17.6) return 10; // Tam dolu (max 10 bar)
-  else if (voltage >= 17.2) return 9; digitalWrite(27, HIGH);
-  else if (voltage >= 17.0) return 8; digitalWrite(27, HIGH);
-  else if (voltage >= 16.5) return 7; digitalWrite(27, HIGH);
-  else if (voltage >= 15.0) return 6; digitalWrite(27, HIGH);
-  else if (voltage >= 14.0) return 5; digitalWrite(27, HIGH);
-  else if (voltage >= 13.0) return 4; digitalWrite(27, HIGH);
-  else if (voltage >= 12.0) return 3; digitalWrite(27, HIGH);
-  else if (voltage >= 11.0) return 2; digitalWrite(27, HIGH);
-  else if (voltage >= 10.0) return 1; digitalWrite(27, HIGH); // Düşük pil
+  else if (voltage >= 17.2) return 9; digitalWrite(charge_on_of, HIGH);
+  else if (voltage >= 17.0) return 8; digitalWrite(charge_on_of, HIGH);
+  else if (voltage >= 16.5) return 7; digitalWrite(charge_on_of, HIGH);
+  else if (voltage >= 15.0) return 6; digitalWrite(charge_on_of, HIGH);
+  else if (voltage >= 14.0) return 5; digitalWrite(charge_on_of, HIGH);
+  else if (voltage >= 13.0) return 4; digitalWrite(charge_on_of, HIGH);
+  else if (voltage >= 12.0) return 3; digitalWrite(charge_on_of, HIGH);
+  else if (voltage >= 11.0) return 2; digitalWrite(charge_on_of, HIGH);
+  else if (voltage >= 10.0) return 1; digitalWrite(charge_on_of, HIGH); // Düşük pil
   else return 0; // Boş
 }
 
